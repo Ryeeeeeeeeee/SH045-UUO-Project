@@ -58,7 +58,7 @@ gc()
 ### Modify group names
 group <- metadata$group
 group <- as.character(group)
-group <- factor(group, levels = c("UUOIH", "UUOVH"))
+group <- factor(group, levels = c("UUOVH", "UUOIH"))
 
 ### Create a data frame for coldata
 coldata <- data.frame(cells = rownames(metadata), groups = group, cell_type = metadata$celltype)
